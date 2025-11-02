@@ -1,4 +1,4 @@
-import {defineField, defineType, Rule} from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'gallery',
@@ -10,11 +10,22 @@ export default defineType({
       title: 'Image',
       type: 'image',
       options: { hotspot: true },
-      validation: (Rule: Rule) => Rule.required(),
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'telegramId',
       title: 'Telegram ID',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'username',
+      title: 'Username',
+      type: 'string',
+    }),
+    defineField({
+      name: 'name',
+      title: 'Name',
       type: 'string',
     }),
     defineField({
