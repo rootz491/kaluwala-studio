@@ -24,8 +24,8 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'name',
-      title: 'Name',
+      name: 'firstName',
+      title: 'First Name',
       type: 'string',
     }),
     defineField({
@@ -42,8 +42,8 @@ export default defineType({
       initialValue: 'pending',
     }),
     defineField({
-      name: 'createdAt',
-      title: 'Created At',
+      name: 'uploadedAt',
+      title: 'Uploaded At',
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
     }),
