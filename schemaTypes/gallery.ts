@@ -47,5 +47,10 @@ export default defineType({
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
     }),
+    defineField({
+      name: 'moderatedAt',
+      title: 'Moderated At',
+      type: 'datetime',
+    }),
   ],
 })
