@@ -34,6 +34,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'telegramId',
+      title: 'Telegram ID',
+      type: 'string',
+    }),
+    defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',
